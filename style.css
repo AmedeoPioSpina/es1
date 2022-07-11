@@ -1,279 +1,100 @@
 body {
   font-family: "Quicksand", sans-serif;
 }
+body nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  padding: 0.4rem 0;
+}
+body nav .logo {
+  margin-left: 0.4rem;
+}
+body nav .logo img {
+  width: 4rem;
+}
+body nav menu {
+  display: flex;
+  margin-left: 0.4rem;
+}
+body nav menu li {
+  list-style-type: none;
+  margin-right: 0.4rem;
+}
+body nav menu li a {
+  display: contents;
+  color: black;
+  text-decoration: none;
+  font-size: 0.6rem;
+  font-weight: 700;
+}
+body header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+}
+body header h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+body header p {
+  text-align: center;
+  max-width: 20rem;
+  margin-bottom: 1rem;
+}
+body header form {
+  display: flex;
+  margin-bottom: 4rem;
+}
+body header form input {
+  border: 2px solid rgb(182, 182, 182);
+  border-right: none;
+  height: 1.5rem;
+}
+body header form button {
+  border-color: black;
+  background-color: black;
+  color: white;
+  width: 5.5rem;
+}
+body main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 1.5rem;
+}
+body main .content {
+  border: 2px solid rgb(179, 179, 179);
+  width: 15rem;
+  margin: 0 auto 1rem auto;
+}
+body main .content img {
+  max-width: 100%;
+  margin-bottom: 0.5rem;
+}
+body main .content h2 {
+  font-weight: bold;
+  margin: 0 0 1rem 0.5rem;
+}
+body main .content p {
+  font-weight: bold;
+  font-size: 0.7rem;
+  color: gray;
+  margin: 0 0 1rem 0.5rem;
+}
 
-@media screen and (min-width: 1025px) {
-  body nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: white;
-    padding: 0.4rem 0;
-  }
-  body nav .logo {
-    margin-left: 0.4rem;
-  }
-  body nav .logo img {
-    width: 4rem;
-  }
-  body nav menu {
-    display: flex;
-    margin-left: 0.4rem;
-  }
-  body nav menu li {
-    list-style-type: none;
-    margin-right: 0.4rem;
-  }
-  body nav menu li a {
-    display: contents;
-    color: black;
-    text-decoration: none;
-    font-size: 0.6rem;
-    font-weight: 700;
-  }
-  body header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 4rem;
-  }
-  body header h1 {
-    font-weight: bold;
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  body header p {
-    text-align: center;
-    max-width: 20rem;
-    margin-bottom: 1rem;
-  }
-  body header form {
-    display: flex;
-    margin-bottom: 4rem;
-  }
-  body header form input {
-    border: 2px solid rgb(182, 182, 182);
-    border-right: none;
-    height: 1.5rem;
-  }
-  body header form button {
-    border-color: black;
-    background-color: black;
-    color: white;
-    width: 5.5rem;
-  }
-  body main {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 1.5rem;
-  }
-  body main .content {
-    border: 2px solid rgb(179, 179, 179);
-    width: 15rem;
-    margin: 0 auto 1rem auto;
-  }
-  body main .content img {
-    max-width: 100%;
-    margin-bottom: 0.5rem;
-  }
-  body main .content h2 {
-    font-weight: bold;
-    margin: 0 0 1rem 0.5rem;
-  }
-  body main .content p {
-    font-weight: bold;
-    font-size: 0.7rem;
-    color: gray;
-    margin: 0 0 1rem 0.5rem;
-  }
-}
 @media screen and (max-width: 1024px) {
-  body nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    background-color: white;
-    padding: 0.4rem 0;
-  }
-  body nav .logo {
-    margin-left: 0.4rem;
-  }
-  body nav .logo img {
-    width: 4rem;
-  }
-  body nav menu {
-    display: flex;
-    margin-left: 0.4rem;
-  }
-  body nav menu li {
-    list-style-type: none;
-    margin-right: 0.4rem;
-  }
-  body nav menu li a {
-    display: contents;
-    color: black;
-    text-decoration: none;
-    font-size: 0.6rem;
-    font-weight: 700;
-  }
-  body ::-webkit-scrollbar {
-    display: none;
-  }
-  body header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 4rem;
-  }
-  body header h1 {
-    font-weight: bold;
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  body header p {
-    text-align: center;
-    max-width: 20rem;
-    margin-bottom: 1rem;
-  }
-  body header form {
-    display: flex;
-    margin-bottom: 4rem;
-  }
-  body header form input {
-    border: 2px solid rgb(182, 182, 182);
-    border-right: none;
-    height: 1.5rem;
-  }
-  body header form button {
-    border-color: black;
-    background-color: black;
-    color: white;
-    width: 5.5rem;
-  }
-  body main {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 1.5rem;
-  }
   body main .content {
-    border: 2px solid rgb(179, 179, 179);
-    width: 15rem;
-    margin: 0 auto 1rem auto;
+    flex: 33%;
   }
-  body main .content img {
-    max-width: 100%;
-    margin-bottom: 0.5rem;
-  }
-  body main .content h2 {
-    font-weight: bold;
-    margin: 0 0 1rem 0.5rem;
-  }
-  body main .content p {
-    font-weight: bold;
-    font-size: 0.7rem;
-    color: gray;
-    margin: 0 0 1rem 0.5rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  body nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    background-color: white;
-    padding: 0.4rem 0;
-  }
-  body nav .logo {
-    margin-left: 0.4rem;
-  }
-  body nav .logo img {
-    width: 4rem;
-  }
-  body nav menu {
-    display: flex;
-    margin-left: 0.4rem;
-  }
-  body nav menu li {
-    list-style-type: none;
-    margin-right: 0.4rem;
-  }
-  body nav menu li a {
-    display: contents;
-    color: black;
-    text-decoration: none;
-    font-size: 0.6rem;
-    font-weight: 700;
-  }
-  body ::-webkit-scrollbar {
+  ::-webkit-scrollbar {
     display: none;
-  }
-  body header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 4rem;
-  }
-  body header h1 {
-    font-weight: bold;
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  body header p {
-    text-align: center;
-    max-width: 20rem;
-    margin-bottom: 1rem;
-  }
-  body header form {
-    display: flex;
-    margin-bottom: 4rem;
-  }
-  body header form input {
-    border: 2px solid rgb(182, 182, 182);
-    border-right: none;
-    height: 1.5rem;
-  }
-  body header form button {
-    border-color: black;
-    background-color: black;
-    color: white;
-    width: 5.5rem;
-  }
-  body main {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  body main margin .content {
-    border: 2px solid rgb(179, 179, 179);
-    width: 15rem;
-    margin: 0 auto 1rem auto;
-  }
-  body main margin .content img {
-    max-width: 100%;
-    margin-bottom: 0.5rem;
-  }
-  body main margin .content h2 {
-    font-weight: bold;
-    margin: 0 0 1rem 0.5rem;
-  }
-  body main margin .content p {
-    font-weight: bold;
-    font-size: 0.7rem;
-    color: gray;
-    margin: 0 0 1rem 0.5rem;
   }
 }/*# sourceMappingURL=style.css.map */

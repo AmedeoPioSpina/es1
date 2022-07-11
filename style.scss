@@ -3,97 +3,92 @@ $h2Margin: 0 0 1rem 0.5rem;
 
 body{
     font-family: 'Quicksand', sans-serif;
-}
-
-@media screen and(min-width: 1025px){
-    body{
-        nav{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background-color: white;
-            padding: 0.4rem 0;
-            .logo{
-                margin-left: 0.4rem;
-                img{
-                    width: 4rem;
-                }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: white;
+        padding: 0.4rem 0;
+        .logo{
+            margin-left: 0.4rem;
+            img{
+                width: 4rem;
             }
-            menu{
-                display: flex;
-                margin-left: $menuMargin;
-                li{
-                    list-style-type: none;
-                    margin-right: $menuMargin;
-                    a{
-                        display: contents;
-                        color: black;
-                        text-decoration: none;
-                        font-size: 0.6rem;
-                        font-weight: 700;
-                    }
+        }
+        menu{
+            display: flex;
+            margin-left: $menuMargin;
+            li{
+                list-style-type: none;
+                margin-right: $menuMargin;
+                a{
+                    display: contents;
+                    color: black;
+                    text-decoration: none;
+                    font-size: 0.6rem;
+                    font-weight: 700;
                 }
             }
         }
+    }
 
-        header{
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 4rem;
+        h1{
+            font-weight: bold;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        p{
+            text-align: center;
+            max-width: 20rem;
+            margin-bottom: 1rem;
+        }
+        form{
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-top: 4rem;
-            h1{
+            margin-bottom: 4rem;
+            input{
+                border: 2px solid rgb(182, 182, 182);
+                border-right: none;
+                height: 1.5rem;
+            }
+            button{
+                border-color: black;
+                background-color: black;
+                color: white;
+                width: 5.5rem;
+            }
+        }
+    }
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 1.5rem;
+        .content{
+            border: 2px solid rgb(179, 179, 179);
+            width: 15rem;
+            margin: 0 auto 1rem auto;
+            img{
+                max-width: 100%;
+                margin-bottom: 0.5rem;
+            }
+            h2{
                 font-weight: bold;
-                font-size: 2rem;
-                text-align: center;
-                margin-bottom: 1rem;
+                margin: $h2Margin;
             }
             p{
-                text-align: center;
-                max-width: 20rem;
-                margin-bottom: 1rem;
-            }
-            form{
-                display: flex;
-                margin-bottom: 4rem;
-                input{
-                    border: 2px solid rgb(182, 182, 182);
-                    border-right: none;
-                    height: 1.5rem;
-                }
-                button{
-                    border-color: black;
-                    background-color: black;
-                    color: white;
-                    width: 5.5rem;
-                }
-            }
-        }
-        main{
-            display: flex;
-            flex-wrap: wrap;
-            margin: 0 1.5rem;
-            .content{
-                border: 2px solid rgb(179, 179, 179);
-                width: 15rem;
-                margin: 0 auto 1rem auto;
-                img{
-                    max-width: 100%;
-                    margin-bottom: 0.5rem;
-                }
-                h2{
-                    font-weight: bold;
-                    margin: $h2Margin;
-                }
-                p{
-                    font-weight: bold;
-                    font-size: 0.7rem;
-                    color: gray;
-                    margin: $h2Margin;
-                }
+                font-weight: bold;
+                font-size: 0.7rem;
+                color: gray;
+                margin: $h2Margin;
             }
         }
     }
@@ -101,194 +96,13 @@ body{
 
 @media screen and(max-width: 1024px){
     body{
-        nav{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            position: fixed;
-            top: 0;
-            width: 100vw;
-            background-color: white;
-            padding: 0.4rem 0;
-            .logo{
-                margin-left: 0.4rem;
-                img{
-                    width: 4rem;
-                }
-            }
-            menu{
-                display: flex;
-                margin-left: $menuMargin;
-                li{
-                    list-style-type: none;
-                    margin-right: $menuMargin;
-                    a{
-                        display: contents;
-                        color: black;
-                        text-decoration: none;
-                        font-size: 0.6rem;
-                        font-weight: 700;
-                    }
-                }
-            }
-        }
-        ::-webkit-scrollbar{
-            display: none;
-        }
-
-        header{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-top: 4rem;
-            h1{
-                font-weight: bold;
-                font-size: 2rem;
-                text-align: center;
-                margin-bottom: 1rem;
-            }
-            p{
-                text-align: center;
-                max-width: 20rem;
-                margin-bottom: 1rem;
-            }
-            form{
-                display: flex;
-                margin-bottom: 4rem;
-                input{
-                    border: 2px solid rgb(182, 182, 182);
-                    border-right: none;
-                    height: 1.5rem;
-                }
-                button{
-                    border-color: black;
-                    background-color: black;
-                    color: white;
-                    width: 5.5rem;
-                }
-            }
-        }
         main{
-            display: flex;
-            flex-wrap: wrap;
-            margin: 0 1.5rem;
             .content{
-                border: 2px solid rgb(179, 179, 179);
-                width: 15rem;
-                margin: 0 auto 1rem auto;
-                img{
-                    max-width: 100%;
-                    margin-bottom: 0.5rem;
-                }
-                h2{
-                    font-weight: bold;
-                    margin: $h2Margin;
-                }
-                p{
-                    font-weight: bold;
-                    font-size: 0.7rem;
-                    color: gray;
-                    margin: $h2Margin;
-                }
+                flex: 33%;
             }
         }
     }
-}
-
-@media screen and(max-width: 480px){
-    body{
-        nav{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            position: fixed;
-            top: 0;
-            width: 100vw;
-            background-color: white;
-            padding: 0.4rem 0;
-            .logo{
-                margin-left: 0.4rem;
-                img{
-                    width: 4rem;
-                }
-            }
-            menu{
-                display: flex;
-                margin-left: 0.4rem;
-                li{
-                    list-style-type: none;
-                    margin-right: 0.4rem;
-                    a{
-                        display: contents;
-                        color: black;
-                        text-decoration: none;
-                        font-size: 0.6rem;
-                        font-weight: 700;
-                    }
-                }
-            }
-        }
-        ::-webkit-scrollbar{
-            display: none;
-        }
-
-        header{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-top: 4rem;
-            h1{
-                font-weight: bold;
-                font-size: 2rem;
-                text-align: center;
-                margin-bottom: 1rem;
-            }
-            p{
-                text-align: center;
-                max-width: 20rem;
-                margin-bottom: 1rem;
-            }
-            form{
-                display: flex;
-                margin-bottom: 4rem;
-                input{
-                    border: 2px solid rgb(182, 182, 182);
-                    border-right: none;
-                    height: 1.5rem;
-                }
-                button{
-                    border-color: black;
-                    background-color: black;
-                    color: white;
-                    width: 5.5rem;
-                }
-            }
-        }
-        main{
-            display: flex;
-            flex-wrap: wrap;
-            margin
-            .content{
-                border: 2px solid rgb(179, 179, 179);
-                width: 15rem;
-                margin: 0 auto 1rem auto;
-                img{
-                    max-width: 100%;
-                    margin-bottom: 0.5rem;
-                }
-                h2{
-                    font-weight: bold;
-                    margin: $h2Margin;
-                }
-                p{
-                    font-weight: bold;
-                    font-size: 0.7rem;
-                    color: gray;
-                    margin: $h2Margin;
-                }
-            }
-        }
+    ::-webkit-scrollbar{
+        display: none;
     }
 }
