@@ -72,7 +72,6 @@ body main {
 }
 body main .content {
   border: 2px solid rgb(179, 179, 179);
-  width: 15rem;
   margin: 0 auto 1rem auto;
 }
 body main .content img {
@@ -89,12 +88,23 @@ body main .content p {
   color: gray;
   margin: 0 0 1rem 0.5rem;
 }
+body ::-webkit-scrollbar {
+  display: none;
+}
 
-@media screen and (max-width: 1024px) {
-  body main .content {
-    flex: 33%;
+@media screen and (min-width: 481px) {
+  body main {
+    gap: 1rem;
   }
-  ::-webkit-scrollbar {
-    display: none;
+  body main .content {
+    flex: 40%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  body main .content {
+    flex: 20%;
+  }
+  body ::-webkit-scrollbar {
+    display: visible;
   }
 }/*# sourceMappingURL=style.css.map */

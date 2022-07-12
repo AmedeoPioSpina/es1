@@ -1,4 +1,5 @@
 $menuMargin: 0.4rem;
+$contentMargin: 0 auto 1rem auto;
 $h2Margin: 0 0 1rem 0.5rem;
 
 body{
@@ -74,8 +75,7 @@ body{
         margin: 0 1.5rem;
         .content{
             border: 2px solid rgb(179, 179, 179);
-            width: 15rem;
-            margin: 0 auto 1rem auto;
+            margin: $contentMargin;
             img{
                 max-width: 100%;
                 margin-bottom: 0.5rem;
@@ -92,17 +92,31 @@ body{
             }
         }
     }
+    ::-webkit-scrollbar{
+        display: none;
+    }
 }
 
-@media screen and(max-width: 1024px){
+@media screen and(min-width: 481px){
     body{
         main{
+            gap: 1rem;
             .content{
-                flex: 33%;
+                flex: 40%;
             }
         }
     }
-    ::-webkit-scrollbar{
-        display: none;
+}
+
+@media screen and(min-width: 1025px) {
+    body{
+        main{
+            .content{
+                flex: 20%;
+            }
+        }
+        ::-webkit-scrollbar{
+            display: visible;
+        }
     }
 }
